@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const authRequest = axios.create({
-  baseURL: "http://123.240.219.120:3000"
+  baseURL: "localhost:3000"
 });
 
 export const postLoginRequest = data => authRequest.post("/login", data);
